@@ -1,0 +1,61 @@
+---
+
+title: VAC basics - Testing
+description: Learn how to design a skill for the VAC
+type: documentation
+page_order: 66
+show_in_navbar: false
+slug: basic-test
+
+---
+
+import Notification from '../../src/components/notification.js'
+
+You can do a certain degree of base-line testing by simply reading through your conversation design with a co-worker or friend. To feel more certain about your design, more formal testing is needed and with participants from all walks of life and degrees of technical competence.
+
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+
+- Guerilla testing techniques for conversations
+- Unmoderated remote testing with UserTesting.com
+- Testing in the lab
+
+</Notification>
+
+### Use a 'Wizard of Oz' experiment
+
+Find someone unfamiliar with your project to try out your dialog. In this scenario, you will be the man behind the curtain and your subject will attempt to complete the task you are testing. As your subject begins to interact, you will respond based on the content in your flow diagram.
+
+- How well does your flow accomodate your subjects responses?
+- Are you able to handle unexpected responses?
+- Can you identify loops that might trap your subject?
+
+This technique could work in situations from you and your subject sitting at a table and talking to having your subject interact with a prototype that you control remotely. It allows you to test the flow of the conversation without having to build the logic behind it.
+
+### Conduct an unmoderated remote test with UserTesting.com
+
+Once you have added interactions to your Figma file, it becomes a possibility to test the design with participants from all over the world and with all levels of experience. UserTesting.com allows us to conduct tests on relatively simple interactions - the idea would be to get qick feedback on design iterations with 5-15 participants. Either develop the test yourself or, ideally, work with a UX researcher to create the test plan, refine the prototype and interpet the results.
+
+- You can test anything that can be hosted on the web but a Figma prototype is fine.
+- Create your prototype, run it within Figma and then 'Share Prototype' to get a link that others can see.
+- Create your test plan on [UserTesting.com](https://www.usertesting.com/) by logging in to the team account.
+- Click on the 'New' button in the upper right and select 'Create an unmoderated test'
+- Fill out the test plan form as well as the audience screener.
+- You can publish the test for a single subject if you want to do a dry run.
+  - Afterwards, you will need to duplicate this test as it can't be rerun with a larger audience.
+  - Make any updates to the new test that might have come up in the course of your dry run.
+  - Delete the dry run test so that we aren't charged.
+- Publish your test for a larger audience.
+
+### Testing in the lab
+
+For larger or more complicated designs, it may be useful to test in the lab as there would be the opportunity to interact with the participants and to use more sophisticated measuring technologies.
+You would need to work with a UX researcher to design the test (and possibly even the prototype) in order to take this route. The benefits are a more rigorous process and potentially more impartial results.
+
+<Notification headerText="Review the test results" textColor="#663333" icon="review" backgroundColor="#ffeeee">
+
+- Include stakeholders and representatives from the development team and from the CPCE design and project management teams.
+- Iterate on your designs based on the test findings.
+- Test your revised designs
+- Repeat…
+
+</Notification>

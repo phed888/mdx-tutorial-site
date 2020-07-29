@@ -1,0 +1,46 @@
+---
+
+title: VAC basics - Visual design
+description: Learn how to design a skill for the VAC
+type: documentation
+page_order: 64
+show_in_navbar: false
+slug: basic-design
+
+---
+
+import Notification from '../../src/components/notification.js'
+import ExternalLink from '../../src/components/external-link.js'
+
+While the flow diagram can demonstrate the logic of your solution, its important to see how the conversation will appear to the customer.
+
+- How does it feel to interact with your conversation design?
+- Do the VA responses fit on a single screen or will the customer need to scroll?
+- Does the number of buttons overwhelm the customer?
+- Do they stack so that they can all be seen at once? 
+
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+
+- Adding the Conversation design library to your Figma file
+- Creating and using a transcript for your design
+- Commonly used conversational components
+
+</Notification>
+
+- Add <ExternalLink linkName="VAC Components" linkURL="https://www.figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=463%3A8833" /> as an Asset in your Figma file.
+- **Review Best practice for building out a skill**:
+  - It is most efficient to create a **transcript** of the scenario that you want to illustrate. 
+  - Create a **vertical auto-layout frame** for each scenario that will be documented
+    - Add in every message bubble, card and quick reply that would play a part in your conversation.
+  - Place each transcript inside of a frame (with ‘Clip Content' checked) that is sized to the conversation area of the VAC window. 
+  - The transcript component can slide up to progressively reveal more and more of the conversation. 
+  - **Note: you can have ephemeral elements like cards and quick replies in the transcript and hide them once they've played their part in the conversation - with auto-layout, the parts of the conversation below will slide up as if the hidden elements were not there.**
+  - For a basic conversation, you will need:
+    - <ExternalLink linkName="Message bubbles" linkURL="http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=5826:0" /> for incoming and outgoing messages
+    - <ExternalLink linkName="Quick reply buttons" linkURL="http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=6184:90738" /> 
+
+<Notification headerText="Review your designs" textColor="#663333" icon="review" backgroundColor="#ffeeee">
+
+- Include stakeholders and representatives from the development team and from the CPCE design and project management teams.
+
+</Notification>

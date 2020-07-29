@@ -1,0 +1,57 @@
+---
+
+title: VAC basics - Conversational fit?
+description: Learn how to design a skill for the VAC
+type: documentation
+page_order: 61
+show_in_navbar: false
+slug: basic-conversation
+
+---
+
+import Notification from '../../src/components/notification.js'
+
+Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
+(copied from Google Conversational Design guidelines)
+
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+
+- Checklists to see if conversation design is the right fit
+- Common pitfalls to avoid in conversation design
+
+</Notification>
+
+### Conversation design checklist
+
+**Conversation is intuitive.**
+It lets users say what they want to get what they want.
+
+- Do users already have human-to-human conversations about this task or topic?
+- Is the interaction brief with minimal back and forth dialog?
+
+**Conversation saves the user more time and effort than a screen-based UI**
+Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want.
+
+- Would users have to tap multiple times to complete the task with a screen?
+- Would users have to navigate multiple apps or widgets to complete the task with a screen?
+- Would the feature be difficult or cumbersome to find?
+
+**Conversation lets users multitask**
+It helps them when they're busy, especially in situations where their hands or eyes are occupied, or when they're on the move.
+
+- Can users do this task while multi-tasking?
+- Can users do this task when their hands or eyes are busy?
+
+**Conversation lets users speak freely**
+Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices.
+
+- Do users feel comfortable talking or typing about this subject?
+
+### Avoiding conversation design pitfalls
+
+(copied from Google Conversational Design guidelines)
+
+- Because users are cooperative, **they often offer more information than is literally required of them.** 
+- Your persona won’t always be able to handle cooperative responses. In these cases, **rely on lightweight and conversational error handling to get the dialog back on track** in a way that doesn’t draw attention to the error.
+- Like your users, your persona should also be cooperative and informative, **offering as much information as is necessary to advance the conversation.**
+- In conversation, **saying too much is as uncooperative as saying too little.** Facilitate comprehension by keeping turns brief and optimally relevant from the user’s point of view.

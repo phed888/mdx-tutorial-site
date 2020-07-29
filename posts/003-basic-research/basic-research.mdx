@@ -1,0 +1,52 @@
+---
+
+title: VAC basics - Research
+description: Learn how to design a skill for the VAC
+type: documentation
+page_order: 61
+show_in_navbar: false
+slug: basic-research
+
+---
+
+import Notification from '../../src/components/notification.js'
+
+Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
+
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+
+- Research topics that contribute to conversation design
+- Writing sample dialogs to understand the flow of a conversation
+
+</Notification>
+
+## Research checklist
+
+- Gather project requirements
+- Understand the **business rules** that guide the interaction
+- Work with the development team to understand what data is or can be available for this project
+  - Understand what information will be needed for success
+  - Understand what information the customer will need to provide
+- Define **happy path** and as many **unhappy paths** as possible 
+  - What happens if the customer isn’t able to supply the needed information?
+  - What happens if the customer provides too much information or too little (benefits of quick replies)?
+  - What happens if the customer-provided information isn’t correct?
+  - What happens if the system is down and the VA can't complete the task?
+
+## Tip: write sample dialogs
+
+*(copied from Google Conversational Design guidelines)*
+
+**Sample dialogs will give you a quick, low-fidelity sense of the “sound-and-feel” of the interaction you’re designing.** They convey the flow that the user will actually experience, without the technical distractions of code notation, complex flow diagrams, recognition-grammar issues, etc.
+
+By writing sample dialogs, **you can informally experiment with and evaluate different design strategies**, such as how to promote the discoverability of new features or how to confirm a user’s request (for example: should you use an implicit confirmation, an explicit confirmation, or no confirmation at all?).
+
+**The easiest way to start writing dialogs is to channel your own expertise as a lifetime communicator.** People can generally tell when something sounds right or wrong, even if they can’t articulate the underlying linguistic principles as to why it sounds that way; because of this, role-playing a dialog is the easiest way to create the initial draft and iterate on successive drafts.
+
+| Heading&nbsp;1  | Heading&nbsp;2                                                                                                                                                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Step&nbsp;1** | Focus on one user persona and one key use case.                                                                                                                                                                                                         |
+| **Step&nbsp;2** | Find a partner and role-play the conversation, with one person pretending they’re the user and the other pretending they’re the system persona. Record the conversation. If you don’t have a partner, you’ll have to switch between playing both roles. |
+| **Step&nbsp;3** | Transcribe the conversation. **This is the first draft of your sample dialog.**                                                                                                                                                                         |
+| **Step&nbsp;4** | Step through the dialog, saying the user’s lines and playing each of the system persona’s lines in the text-to-speech (TTS) in which it will be rendered.                                                                                               |
+| **Step&nbsp;5** | Repeat steps 1-4 with different user personas and key use cases.                                                                                                                                                                                        |

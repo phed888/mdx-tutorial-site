@@ -1,0 +1,42 @@
+---
+
+title: VAC basics - Flow design
+description: Learn how to design a skill for the VAC
+type: documentation
+page_order: 64
+show_in_navbar: false
+slug: basic-flow
+
+---
+
+import Notification from '../../src/components/notification.js'
+
+The flow diagram is a **step-by-step visualization of how to fulfill the project requirements**. The flow diagram should document the inputs, decision points and the different routes a conversation might take within your skill. The flow diagram is the simplest way to document the speech that the VA display to the customer as it moves through the process.
+
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+
+- Conventions for creating flow diagrams in the Conversation Design System
+- Strategies for modularization and reuse
+- Working with the content strategist
+- Adding conversation codes
+
+</Notification>
+
+### Flow diagram checklist
+
+- Visit  [Learn About Flows](https://confluence.expedia.biz/display/GCOUX/*+Learn+About+Flows) in the Flow Maps to see the styles and conventions for creating a flow map.
+- **Try to break down your interaction into the smallest self-contained modules possible.** 
+  - *Like Russian nesting dolls, little components are included in bigger components which are included in bigger components which eventually create entire (flows). — Brad Frost*
+  - See Brad Frost's [Atomic design](https://bradfrost.com/blog/post/extending-atomic-design/).
+- Review [Flow Maps](https://confluence.expedia.biz/display/GCOUX/Flows) to see if any of the modules that make up your interaction already exist.
+  - If you identify parts of your flow that already exist in the library, you can abstract them as skills (green boxes) in your flow design and don't need to repeat that interaction.
+  - **Review the node and connection types** described in [Flow Symbols](https://confluence.expedia.biz/display/GCOUX/Flow+Symbols) and build your flow out accordingly.
+- **Work with content strategist to begin laying in customer interactions**    
+  - What does the VA tell the customer 
+  - What information is needed at each step
+  - Insure that the voice and tone of the VA is correct.
+- Work with development to make sure that all edge and error cases are documented.  
+- Review flows with development, product management and stakeholders
+  - **Once the flows are approved**:
+    - Work with content strategist to ensure [Content Codes](https://confluence.expedia.biz/display/GCOUX/How+to+Insert+Content+Codes) have been added to the interactions
+    - Add your flow to the Library so that other designers and product managers can benefit from your work.

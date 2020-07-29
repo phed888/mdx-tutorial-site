@@ -1,138 +1,26 @@
 ---
 
-title: VAC basic tutorial
+title: VAC basics - Introduction
 description: Learn how to design a skill for the VAC
 type: documentation
 page_order: 60
 show_in_navbar: false
-slug: basic-tutorial
+slug: basic-introduction
 
 ---
 
-Designer is given a project
-
-## Research
+import Notification from '../../src/components/notification.js'
 
 Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
 
-### Research checklist
+<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
 
-- [ ] Gather project requirements
-- [ ] Understand the **business rules** that guide the interaction
-- [ ] Work with the development team to understand what data is or can be available for this project
-  - Understand what information will be needed for success
-  - Understand what information the customer will need to provide
-- [ ] Define **happy path** and as many **unhappy paths** as possible 
-  - What happens if the customer isn’t able to supply the needed information
-  - What happens if the customer provides too much information or too little (benefits of quick replies)
-  - What happens if the customer-provided information isn’t correct?
-  - What happens if the system is down and the VA can't complete the task?
-  
-## Is this project a good fit for conversation design?
+- Research tips and techniques specific to conversation design
+- How to judge whether your project is right for conversation design
+- How to diagram the logic of your conversation in Gliffy
+- How to design your conversation in Figma
+- Techniques for testing conversation designs
+- How to hand off your design
 
-Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
-(copied from Google Conversational Design guidelines)
+</Notification>
 
-### Conversation design checklist
-
-**Conversation is intuitive.**
-It lets users say what they want to get what they want.
-
-- [ ] Do users already have human-to-human conversations about this task or topic?
-- [ ] Is the interaction brief with minimal back and forth dialog?
-
-**Conversation saves the user more time and effort than a screen-based UI**
-Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want.
-
-- [ ] Would users have to tap multiple times to complete the task with a screen?
-- [ ] Would users have to navigate multiple apps or widgets to complete the task with a screen?
-- [ ] Would the feature be difficult or cumbersome to find?
-
-**Conversation lets users multitask**
-It helps them when they're busy, especially in situations where their hands or eyes are occupied, or when they're on the move.
-
-- [ ] Can users do this task while multi-tasking?
-- [ ] Can users do this task when their hands or eyes are busy?
-
-**Conversation lets users speak freely**
-Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices.
-
-- [ ] Do users feel comfortable talking or typing about this subject?
-
-### Avoiding conversation design pitfalls
-
-(copied from Google Conversational Design guidelines)
-
-- Because users are cooperative, **they often offer more information than is literally required of them.** 
-- Your persona won’t always be able to handle cooperative responses. In these cases, **rely on lightweight and conversational error handling to get the dialog back on track** in a way that doesn’t draw attention to the error.
-- Like your users, your persona should also be cooperative and informative, **offering as much information as is necessary to advance the conversation.**
-- In conversation, **saying too much is as uncooperative as saying too little.** Facilitate comprehension by keeping turns brief and optimally relevant from the user’s point of view.
-
-## Write sample dialogs
-
-(copied from Google Conversational Design guidelines)
-
-**Sample dialogs will give you a quick, low-fidelity sense of the “sound-and-feel” of the interaction you’re designing.** They convey the flow that the user will actually experience, without the technical distractions of code notation, complex flow diagrams, recognition-grammar issues, etc.
-
-By writing sample dialogs, **you can informally experiment with and evaluate different design strategies**, such as how to promote the discoverability of new features or how to confirm a user’s request (for example: should you use an implicit confirmation, an explicit confirmation, or no confirmation at all?).
-
-**The easiest way to start writing dialogs is to channel your own expertise as a lifetime communicator.** People can generally tell when something sounds right or wrong, even if they can’t articulate the underlying linguistic principles as to why it sounds that way; because of this, role-playing a dialog is the easiest way to create the initial draft and iterate on successive drafts.
-
-Heading&nbsp;1 | Heading 2
---- | ---
-**Step&nbsp;1** | Focus on one user persona and one key use case.
-**Step&nbsp;2** | Find a partner and role-play the conversation, with one person pretending they’re the user and the other pretending they’re the system persona. Record the conversation. If you don’t have a partner, you’ll have to switch between playing both roles.
-**Step&nbsp;3** | Transcribe the conversation. **This is the first draft of your sample dialog.**
-**Step&nbsp;4** | Step through the dialog, saying the user’s lines and playing each of the system persona’s lines in the text-to-speech (TTS) in which it will be rendered.
-**Step&nbsp;5** | Repeat steps 1-4 with different user personas and key use cases.
-
-## Create flow diagrams in Gliffy
-
-The flow diagram is a **step-by-step visualization of how to fulfill the project requirements**. The flow diagram should document the inputs, decision points and their alternative routes as well as the outputs of the process. The flow diagram is the simplest way to document the speech that the VA display to the customer as it moves through the process.
-
-> Like Russian nesting dolls, little components are included in bigger components which are included in bigger components which eventually create entire (flows). — Brad Frost
-
-### Flow diagram checklist
-
-- [ ] Visit  [Learn About Flows](https://confluence.expedia.biz/display/GCOUX/*+Learn+About+Flows) in the Flow Maps to see the styles and conventions for creating a flow map.
-- [ ] **Try to break down your interaction into the smallest self-contained modules possible.** 
-  - See Brad Frost's [Atomic design](https://bradfrost.com/blog/post/extending-atomic-design/).
-  - Review [Flow Maps](https://confluence.expedia.biz/display/GCOUX/Flows) to see if any of the modules that make up your interaction already exist.
-  - If you identify parts of your flow that already exist in the library, you can abstract them as skills (green boxes) in your flow design and don't need to repeat that interaction.
-  - **Review the node and connection types** described in [Flow Symbols](https://confluence.expedia.biz/display/GCOUX/Flow+Symbols) and build your flow out accordingly.
-- [ ] **Work with content strategist to begin laying in customer interactions**    
-  - What does the VA tell the customer 
-  - What information is needed at each step
-  - Insure that the voice and tone of the VA is correct.
-- [ ] Work with development to make sure that all edge and error cases are documented.  
-- [ ] Review flows with development, product management and stakeholders
-  - **Once the flows are approved**:
-    - [ ] Work with content strategist to ensure [Content Codes](https://confluence.expedia.biz/display/GCOUX/How+to+Insert+Content+Codes) have been added to the interactions
-    - [ ] Add your flow to the Library so that other designers and product managers can benefit from your work.
-
-## Compose your designs in Figma
-
-**While the flow diagram can demonstrate the logic of your solution, its important to see how the conversation will appear to the customer.** Do the VA responses fit on a single screen or will the customer need to scroll? Does the number of buttons overwhelm the customer? Do they stack so that they can all be seen at once?
-
-- [ ] Add ‘[VAC Components](https://www.figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=463%3A8833)' as an Asset in your Figma file.
-- [ ] **Review Best practice for building out a skill**:
-  - It is most efficient to create a **transcript** of the scenario that you want to illustrate. 
-  - Create a **vertical auto-layout frame** for each scenario that will be documented
-    - Add in every message bubble, card and quick reply that would play a part in your conversation.
-  - Place each transcript inside of a frame (with ‘Clip Content' checked) that is sized to the conversation area of the VAC window. 
-  - The transcript component can slide up to progressively reveal more and more of the conversation. 
-  - **Note: you can have ephemeral elements like cards and quick replies in the transcript and hide them once they've played their part in the conversation - with auto-layout, the parts of the conversation below will slide up as if the hidden elements were not there.**
-  - For a basic conversation, you will need:
-    - [Message bubbles](http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=5826:0) for incoming and outgoing messages
-    - [Quick reply buttons](http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=6184:90738)
-  - Depending on your flow, you might also want to display information in a more structured way. In that event, investigate the  **declarative card** in the components library.
-    - **Note: Declarative cards are built from UDS and UITK components.**
-    - If a card exists that does what you need, then that is the easiest, you can just use it!
-    - Is there a card that is close to what you need? If so, make your changes and submit to **VAC design review**.
-    - Create a new experimental card and submit it to **VAC design review**.
-    - Finally, work with the development team to ensure that your flow is coded for [Accessibility](http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=7896:2198). 
-- [ ] **Review your comps with stakeholders** once you have designed the happy and unhappy path scenarios.
-
-## Test your design
-
-If your design 
