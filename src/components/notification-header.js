@@ -9,6 +9,7 @@ const NotifHeaderContainer = styled.header`
   padding-bottom: 0;
   svg {
     margin: 1.4rem 1.2rem 1.2rem;
+    transform: translateY(0.8rem);
     margin-left: 0;
     fill: ${props => props.textColor};
   }
