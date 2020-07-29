@@ -1,5 +1,4 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
   const blogPostTemplate = require.resolve(`./src/templates/tutorial`)
   const result = await graphql(`
     query {
@@ -11,17 +10,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `);
+  `)
 
   if (result.errors) {
-    reporter.panic('Failed to creat posts', result.errors);
+    reporter.panic("Failed to create posts", result.errors)
   }
-  
-  const posts = result.data.allMdx.nodes;
-  
+
+  const posts = result.data.allMdx.nodes
+
   posts.forEach(post => {
     actions.createPage({
-      path: post.frontmatter.slug,
+      path: `/${post.frontmatter.slug}/`,
       component: blogPostTemplate,
       context: {
         slug: post.frontmatter.slug,
