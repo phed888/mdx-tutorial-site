@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
   html,
@@ -17,15 +17,15 @@ const GlobalStyles = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-  * + * {
+  /* * + * {
     margin-top: 1rem;
-  }
+  } */
   body {
     background-color: #fff;
     color: #555;
     font-size: 1.6rem;
     line-height: 1.75;
-    width: 97rem;
+    width: 120rem;
     margin: 0 auto;
     /* remove margin-top from __gatsby div */
     > div {
@@ -54,7 +54,10 @@ const GlobalStyles = createGlobalStyle`
         border-left: 1px solid #ccc;
       }
     }
+    li {
+      margin: 0;
+    }
   }
 `
 
-export default GlobalStyles;
+export default GlobalStyles

@@ -1,12 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import DefaultLayout from '../layouts/defaultLayout'
-import ReadLink from '../styles/readlink'
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import DefaultLayout from "../layouts/defaultLayout"
+import ReadLink from "../styles/readlink"
+import PageNav from "../components/page-nav"
 
-const Attribution = styled.caption`
-  font-size: 1.2rem;
+const PageBodyContainer = styled.div`
+  display: flex;
+  .pageContent {
+    width: 90rem;
+  }
 `
 
 export const query = graphql`
@@ -14,20 +18,23 @@ export const query = graphql`
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        author
       }
       body
     }
   }
-`;
+`
 
 const TutorialTemplate = ({ data: { mdx: post } }) => (
   <DefaultLayout>
     <h1>{post.frontmatter.title}</h1>
-    <Attribution>Posted by {post.frontmatter.author}</Attribution>
-    <MDXRenderer>{post.body}</MDXRenderer>
+    <PageBodyContainer>
+      <div class="pageContent">
+        <MDXRenderer>{post.body}</MDXRenderer>
+      </div>
+      <PageNav />
+    </PageBodyContainer>
     <ReadLink to="/">Back to posts index</ReadLink>
   </DefaultLayout>
-);
+)
 
-export default TutorialTemplate;
+export default TutorialTemplate
