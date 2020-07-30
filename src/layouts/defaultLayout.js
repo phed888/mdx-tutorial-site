@@ -6,8 +6,15 @@ import styled from "styled-components"
 import Helmet from "react-helmet"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
+const SiteWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
+
 const MainContainer = styled.main`
   display: flex;
+  flex: 1;
   section {
     width: 25rem;
   }
@@ -21,7 +28,7 @@ const DefaultLayout = ({ children }) => {
   const { title, description } = useSiteMetadata()
 
   return (
-    <>
+    <SiteWrapper>
       <GlobalStyles />
       <Helmet>
         <html lang="en" />
@@ -33,7 +40,7 @@ const DefaultLayout = ({ children }) => {
         <SectionNav />
         <div className="pageBody">{children}</div>
       </MainContainer>
-    </>
+    </SiteWrapper>
   )
 }
 
