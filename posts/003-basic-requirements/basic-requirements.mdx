@@ -1,15 +1,17 @@
 ---
 
-title: VAC basics - Research
+title: CDS basics - Requirements
 description: Learn how to design a skill for the VAC
 type: documentation
 page_order: 61
 show_in_navbar: false
-slug: basic-research
+slug: basic-requirements
 
 ---
 
 import Notification from '../../src/components/notification.js'
+import PageFooter from '../../src/components/page-footer.js'
+
 
 Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
 
@@ -33,6 +35,20 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
   - What happens if the customer-provided information isn’t correct?
   - What happens if the system is down and the VA can't complete the task?
 
+<Notification headerText="Example: Requirements" textColor="#00001e" icon="example" backgroundColor="#f0f0f0">
+
+  For the purposes of this tutorial, we will be looking at a simple skill: asking for the check-in time of a hotel booking.
+
+  - there is an existing skill to verify a customer so our customer will be verified
+  - we will know from the intent that the question is about a hotel booking
+  - we might need to ask which hotel booking the customer means
+  - we will know whether or not it is a multi-room booking
+  - we will know whether or not the hotel has provided us with check-in times
+  - we will know whether there is an appropriate photo to illustrate check-in
+    - maybe the front desk?
+
+</Notification>
+
 ## Tip: write sample dialogs
 
 *(copied from Google Conversational Design guidelines)*
@@ -50,3 +66,19 @@ By writing sample dialogs, **you can informally experiment with and evaluate dif
 | **Step&nbsp;3** | Transcribe the conversation. **This is the first draft of your sample dialog.**                                                                                                                                                                         |
 | **Step&nbsp;4** | Step through the dialog, saying the user’s lines and playing each of the system persona’s lines in the text-to-speech (TTS) in which it will be rendered.                                                                                               |
 | **Step&nbsp;5** | Repeat steps 1-4 with different user personas and key use cases.                                                                                                                                                                                        |
+
+Here is an example of how our sample skill might be represented as a sample dialog:
+
+<Notification headerText="Example: Sample dialog" textColor="#00001e" icon="example" backgroundColor="#f0f0f0">
+
+| Speaker  | Utterance                                                               |
+| -------- | ----------------------------------------------------------------------- |
+| Customer | "How early can I check into my hotel?"                                  |
+| VA       | "I see you have these bookings. Which one can I help you with?"         |
+| Customer | "The hotel in San Diego"                                                |
+| VA       | "Here is what your hotel says about check-in: Check-in time is 4:00 pm" |
+| VA       | "Is there anything else I can help you with?"                           |
+
+</Notification>
+
+<PageFooter prevSlug="/basic-introduction" prevPage="Introduction" nextSlug="/basic-conversation" nextPage="Conversational fit?" />
