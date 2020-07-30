@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const PgNavContainer = styled.section`
   padding: 2rem;

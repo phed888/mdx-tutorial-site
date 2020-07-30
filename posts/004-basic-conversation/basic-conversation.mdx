@@ -1,6 +1,6 @@
 ---
 
-title: VAC basics - Conversational fit?
+title: CDS basics - Conversational fit?
 description: Learn how to design a skill for the VAC
 type: documentation
 page_order: 61
@@ -10,6 +10,7 @@ slug: basic-conversation
 ---
 
 import Notification from '../../src/components/notification.js'
+import PageFooter from '../../src/components/page-footer.js'
 
 Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
 (copied from Google Conversational Design guidelines)
@@ -55,3 +56,5 @@ Spoken conversations are best in private spaces or familiar shared spaces. Writt
 - Your persona won’t always be able to handle cooperative responses. In these cases, **rely on lightweight and conversational error handling to get the dialog back on track** in a way that doesn’t draw attention to the error.
 - Like your users, your persona should also be cooperative and informative, **offering as much information as is necessary to advance the conversation.**
 - In conversation, **saying too much is as uncooperative as saying too little.** Facilitate comprehension by keeping turns brief and optimally relevant from the user’s point of view.
+
+<PageFooter prevSlug="/basic-requirements" prevPage="Requirements" nextSlug="/basic-flow" nextPage="Flow design" />
