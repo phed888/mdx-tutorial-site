@@ -19,7 +19,7 @@ const SecNavContainer = styled.section`
       a:visited {
         text-decoration: none;
         padding: 1rem;
-        background-color: #eee;
+        background-color: #f0f0f0;
         color: #000;
         display: block;
         margin-bottom: 0.2rem;
@@ -49,8 +49,8 @@ const SectionNav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/basic-research" activeClassName="active">
-            01 - Research
+          <Link to="/basic-requirements" activeClassName="active">
+            01 - Requirements
           </Link>
         </li>
         <li>

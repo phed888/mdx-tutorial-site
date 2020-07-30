@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
 const HeaderContainer = styled.header`
   padding: 2rem;
@@ -16,7 +16,7 @@ const NavLink = styled(Link)`
   font-weight: normal;
   line-height: 1;
   margin: 0 1rem 0 0;
-  padding: .5rem;
+  padding: 0.5rem;
   text-decoration: none;
 `
 
@@ -30,9 +30,8 @@ const Header = () => (
     <NavLink to="/">CDS Tutorials</NavLink>
     <NavContainer>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/test/">Test</NavLink>
     </NavContainer>
   </HeaderContainer>
 )
 
-export default Header;
+export default Header
