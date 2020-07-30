@@ -33,7 +33,6 @@ const TutorialTemplate = ({ data: { mdx: post } }) => (
       </div>
       <PageNav />
     </PageBodyContainer>
-    <ReadLink to="/">Back to posts index</ReadLink>
   </DefaultLayout>
 )
 
