@@ -45,14 +45,28 @@ const GlobalStyles = createGlobalStyle`
       border-collapse: collapse;
       border: none
     }
-    th, td {
-      padding: 5px 10px;
+    th,
+    td {
+      padding: 10px 20px;
+    }
+    th {
+      background-color: #eee;
+      border-left: 1px solid #fff;
+      border-top: none;
+      &:first-child {
+        border-left: 1px solid #eee;
+      }
+      &:last-child {
+        border-right: 1px solid #eee;
+      }
+    }
+    td {
       border-bottom: 1px solid #ccc;
       border-right: 1px solid #ccc;
       border-top: none;
-      &:first-child {
-        border-left: 1px solid #ccc;
-      }
+      line-height: 1.2;
+    &:first-child {
+      border-left: 1px solid #ccc;
     }
     li {
       margin: 0;
