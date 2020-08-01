@@ -38,10 +38,6 @@ const ChecklistItemContainer = styled.li`
       content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='white'><path d='M5 12.5L1 8L2.5 6L5 9L11.5 1.5L13 3L5 12.5Z'></path></svg>");
       width: 1.4rem;
       height: 1.4rem;
-      /* border-width: 0.2rem;
-      border-style: solid;
-      border-color: transparent transparent #fff #fff;
-      transform: rotate(-45deg); */
       left: -2.2rem;
       top: 0.1rem;
       transform-origin: center;
