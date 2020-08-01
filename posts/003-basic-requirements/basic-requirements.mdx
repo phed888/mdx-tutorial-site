@@ -11,6 +11,7 @@ slug: basic-requirements
 
 import Notification from '../../src/components/notification.js'
 import PageFooter from '../../src/components/page-footer.js'
+import CheckListItem from '../../src/components/checklist/checklist-item.js'
 
 
 Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
@@ -22,18 +23,21 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
 
 </Notification>
 
-## Research checklist
+#### Work with the product manager to understand:
 
-- Gather project requirements
-- Understand the **business rules** that guide the interaction
-- Work with the development team to understand what data is or can be available for this project
-  - Understand what information will be needed for success
-  - Understand what information the customer will need to provide
-- Define **happy path** and as many **unhappy paths** as possible 
-  - What happens if the customer isn’t able to supply the needed information?
-  - What happens if the customer provides too much information or too little (benefits of quick replies)?
-  - What happens if the customer-provided information isn’t correct?
-  - What happens if the system is down and the VA can't complete the task?
+<CheckListItem itemLabel="Project requirements" />
+<CheckListItem itemLabel="The business rules that guide the interaction" />
+
+
+#### Work with the development team to understand:
+
+<CheckListItem itemLabel="What information is available and what will be needed for success" />
+<CheckListItem itemLabel="What information the customer will need to provide" />
+<CheckListItem itemLabel="What happens if the customer isn't able to supply the needed info?" />
+<CheckListItem itemLabel="What happens if the customer provides too much or too little info?" />
+<CheckListItem itemLabel="What happens if the customer provides incorrect info?" />
+<CheckListItem itemLabel="What happens if the system is down and the VA can't complete the task?" />
+
 
 <Notification headerText="Example: Requirements" textColor="#00001e" icon="example" backgroundColor="#f0f0f0">
 

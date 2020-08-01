@@ -11,6 +11,7 @@ slug: basic-conversation
 
 import Notification from '../../src/components/notification.js'
 import PageFooter from '../../src/components/page-footer.js'
+import CheckListItem from '../../src/components/checklist/checklist-item.js'
 
 Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
 (copied from Google Conversational Design guidelines)
@@ -24,29 +25,14 @@ Conversation design is a powerful approach, but it's not right for every Action.
 
 ### Conversation design checklist
 
-**Conversation is intuitive.**
-It lets users say what they want to get what they want.
+Check off as many of the statements on the left as you can to determine how good a fit your task is for conversation design.
 
-- Do users already have human-to-human conversations about this task or topic?
-- Is the interaction brief with minimal back and forth dialog?
-
-**Conversation saves the user more time and effort than a screen-based UI**
-Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want.
-
-- Would users have to tap multiple times to complete the task with a screen?
-- Would users have to navigate multiple apps or widgets to complete the task with a screen?
-- Would the feature be difficult or cumbersome to find?
-
-**Conversation lets users multitask**
-It helps them when they're busy, especially in situations where their hands or eyes are occupied, or when they're on the move.
-
-- Can users do this task while multi-tasking?
-- Can users do this task when their hands or eyes are busy?
-
-**Conversation lets users speak freely**
-Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices.
-
-- Do users feel comfortable talking or typing about this subject?
+| Questions about your project | Conversation design principle |
+| --- | --- |
+| <CheckListItem itemLabel="Users already have human-to-human conversations about this task or topic" /><CheckListItem itemLabel="The interaction is brief with minimal back and forth dialog" /> | **Conversation is intuitive.** It lets users say what they want to get what they want. |
+|<CheckListItem itemLabel="Users would have to tap multiple times to complete the task with a screen" /><CheckListItem itemLabel="Users have to navigate multiple apps or widgets to complete the task with a screen" /><CheckListItem itemLabel="The feature would be difficult or cumbersome to find with a screen." /> | **Conversation saves the user more time and effort than a screen-based UI** Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want. |
+| <CheckListItem itemLabel="Users can do this task while multi-tasking." /><CheckListItem itemLabel="Users can do this task while their hands or eyes are busy." /> | **Conversation lets users multi-task.** It helps them when they are busy, especially in situations where their hands or eyes are occupied, or when they're on the move. |
+| <CheckListItem itemLabel="Users feel comfortable talking or typing about this subject." /> | **Conversations let users speak feely** Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices. |
 
 ### Avoiding conversation design pitfalls
 
