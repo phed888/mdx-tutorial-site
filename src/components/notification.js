@@ -23,6 +23,7 @@ const Notification = ({
   children,
   headerText,
   textColor,
+  borderColor,
   icon,
   backgroundColor,
 }) => {
@@ -31,6 +32,7 @@ const Notification = ({
       <NotificationHeader
         headerText={headerText}
         textColor={textColor}
+        borderColor={borderColor}
         icon={icon}
       />
       {children}

@@ -51,10 +51,20 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: `gatsby-remark-external-links`,
             options: {
               target: "_blank",
               rel: "nofollow",
+            },
+          },
+          {
+            resolve: `gatsby-remark-custom-image-component`,
+            options: {
+              componentName: "image-wrapper",
+              imagePropName: "src",
+              sharpMethod: "fluid",
+              quality: 50,
+              maxWidth: 1024,
             },
           },
         ],
@@ -67,7 +77,9 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/layouts/defaultLayout.js"),
         },
+        gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
       },
     },
+    "gatsby-plugin-sharp",
   ],
 }

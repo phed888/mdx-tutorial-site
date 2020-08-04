@@ -19,12 +19,6 @@ export default () => {
       <p>
         Use the navigation on the left to explore the parts of the tutorial.
       </p>
-      {/* <Link to="/test/">Test page</Link> */}
-
-      {/* <h2>Read my posts</h2>
-    {posts.map(post => (
-      <PostPreview post={post} key={post.slug} />
-    ))} */}
     </DefaultLayout>
   )
 }
