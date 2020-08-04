@@ -22,7 +22,6 @@ const NotifHeaderContainer = styled.header`
 `
 
 const NotificationHeader = ({ headerText, textColor, borderColor, icon }) => {
-  console.log(borderColor)
   return (
     <NotifHeaderContainer textColor={textColor} borderColor={borderColor}>
       <Icon icon={icon} />
