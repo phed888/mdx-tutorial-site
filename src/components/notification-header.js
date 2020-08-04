@@ -5,7 +5,8 @@ import Icon from "./icons/icons"
 const NotifHeaderContainer = styled.header`
   display: flex;
   color: ${props => props.textColor};
-  border-bottom: 1px solid ${props => props.textColor};
+  border-bottom: 1px solid
+    ${props => (props.borderColor ? props.borderColor : props.textColor)};
   padding-bottom: 0;
   margin-bottom: 1.2rem;
   svg {
@@ -20,9 +21,10 @@ const NotifHeaderContainer = styled.header`
   }
 `
 
-const NotificationHeader = ({ headerText, textColor, icon }) => {
+const NotificationHeader = ({ headerText, textColor, borderColor, icon }) => {
+  console.log(borderColor)
   return (
-    <NotifHeaderContainer textColor={textColor}>
+    <NotifHeaderContainer textColor={textColor} borderColor={borderColor}>
       <Icon icon={icon} />
       <h3>{headerText}</h3>
     </NotifHeaderContainer>
