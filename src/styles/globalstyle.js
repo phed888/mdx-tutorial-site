@@ -52,7 +52,9 @@ const GlobalStyles = createGlobalStyle`
     th {
       background-color: #eee;
       border-left: 1px solid #fff;
+      border-bottom: 1px solid #ccc;
       border-top: none;
+      white-space: nowrap;
       &:first-child {
         border-left: 1px solid #eee;
       }
@@ -71,6 +73,11 @@ const GlobalStyles = createGlobalStyle`
     li {
       margin: 0;
     }
+  }
+  .gatsby-resp-image-wrapper {
+    border-radius: .8rem;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.25);
+    margin: 3rem 0;
   }
 `
 
