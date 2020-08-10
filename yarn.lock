@@ -1110,6 +1110,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.4.0", "@babel/runtime@^7.9.2":
+  version "7.11.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
+  integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.3":
   version "7.10.3"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.10.3.tgz#aaabbf0fcfc82d595d3e1b9467b201d1a33a6e64"
@@ -3337,6 +3344,13 @@ babel-plugin-macros@^2.8.0:
     "@babel/runtime" "^7.7.2"
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
+
+babel-plugin-polished@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-polished/-/babel-plugin-polished-1.1.0.tgz#7f6902ab8e9c20fc14cb53d596dd858880e357d3"
+  integrity sha1-f2kCq46cIPwUy1PVlt2FiIDjV9M=
+  dependencies:
+    polished "^1.0.0"
 
 babel-plugin-remove-graphql-queries@^2.9.15:
   version "2.9.15"
@@ -6916,6 +6930,13 @@ gatsby-plugin-page-creator@^2.3.19:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
+
+gatsby-plugin-polished@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-polished/-/gatsby-plugin-polished-1.0.4.tgz#11ed8346737737eb4fc5e7a23a5bb4dde9fb1954"
+  integrity sha512-bpm3TR1b982UOlAhjrcTSTpTXW1G4C8dWDBPDag6WbZ3EbtvvtaOO7q4Z1w+RAmunBeAv5maf0BwFcbO4N5GQw==
+  dependencies:
+    "@babel/runtime" "^7.4.0"
 
 gatsby-plugin-react-helmet@^3.3.10:
   version "3.3.10"
@@ -11437,6 +11458,18 @@ pnp-webpack-plugin@^1.6.4:
   integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   dependencies:
     ts-pnp "^1.1.6"
+
+polished@^1.0.0:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.3.tgz#d61b8a0c4624efe31e2583ff24a358932b6b75e1"
+  integrity sha512-4NmSD7fMFlM8roNxs7YXPv7UFRbYzb0gufR5zBxJLRzY54+zFsavxBo6zsQzP9ep6Hh3pC2pTyrpSTBEaB6IkQ==
+
+polished@^3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.6.5.tgz#dbefdde64c675935ec55119fe2a2ab627ca82e9c"
+  integrity sha512-VwhC9MlhW7O5dg/z7k32dabcAFW1VI2+7fSe8cE/kXcfL7mVdoa5UxciYGW2sJU78ldDLT6+ROEKIZKFNTnUXQ==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 portfinder@^1.0.26:
   version "1.0.26"
