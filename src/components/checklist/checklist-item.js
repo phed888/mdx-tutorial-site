@@ -47,12 +47,12 @@ const ChecklistItemContainer = styled.li`
   }
 `
 
-const CheckListItem = ({ itemLabel }) => {
+const CheckListItem = ({ itemLabel, isChecked }) => {
   const uniqueID = uuid()
 
   return (
     <ChecklistItemContainer>
-      <input type="checkbox" id={uniqueID} />
+      <input type="checkbox" id={uniqueID} checked={isChecked} />
       <label for={uniqueID}>{itemLabel}</label>
     </ChecklistItemContainer>
   )
