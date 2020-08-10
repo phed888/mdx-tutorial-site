@@ -50,11 +50,16 @@ const GlobalStyles = createGlobalStyle`
       padding: 10px 20px;
     }
     th {
-      background-color: #eee;
+      background-color: transparent;
       border-left: 1px solid #fff;
       border-bottom: 1px solid #ccc;
       border-top: none;
+      text-align: left;
       white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      color: #666;
       &:first-child {
         border-left: 1px solid #eee;
       }
