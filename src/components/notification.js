@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import NotificationHeader from "./notification-header"
+import { lighten } from "polished"
 
 const NotificationContainer = styled.div`
   border-radius: 0.8rem;
@@ -17,6 +18,18 @@ const NotificationContainer = styled.div`
       margin-top: 0;
     }
   }
+  th {
+    color: ${props => props.textColor};
+  }
+  th,
+  td {
+    border-color: ${props =>
+      props.borderColor && lighten(0.4, props.borderColor)};
+  }
+  td:first-child {
+    border-left-color: ${props =>
+      props.borderColor && lighten(0.4, props.borderColor)};
+  }
 `
 
 const Notification = ({
@@ -28,7 +41,11 @@ const Notification = ({
   backgroundColor,
 }) => {
   return (
-    <NotificationContainer backgroundColor={backgroundColor}>
+    <NotificationContainer
+      backgroundColor={backgroundColor}
+      textColor={textColor}
+      borderColor={borderColor}
+    >
       <NotificationHeader
         headerText={headerText}
         textColor={textColor}
