@@ -12,22 +12,28 @@ slug: basic-requirements
 import Notification from '../../src/components/notification.js'
 import PageFooter from '../../src/components/page-footer.js'
 import CheckListItem from '../../src/components/checklist/checklist-item.js'
+import ExternalLink from '../../src/components/external-link.js'
 
 
 Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
 
-<Notification headerText="What your will learn in this section" textColor="#333366" borderColor="#333366" icon="learn" backgroundColor="#eeeeff">
+<Notification headerText="What your will learn in this section" textColor="#00001e" borderColor="#999" icon="learn" backgroundColor="#f0f0f0">
 
 - Research topics that contribute to conversation design
 - Writing sample dialogs to understand the flow of a conversation
 
 </Notification>
 
+#### Work with your Content Strategist
+
+<CheckListItem itemLabel="Review Content Strategy Documentation and meet with your content strategist" />
+<ExternalLink linkName="Content Strategy Documentation" linkURL="https://confluence.expedia.biz/display/GCOUX/Content+Strategy" />
+
 #### Work with the product manager to understand:
 
 <CheckListItem itemLabel="Project requirements" />
 <CheckListItem itemLabel="The business rules that guide the interaction" />
-
+<CheckListItem itemLabel="Conduct competitive analysis" />
 
 #### Work with the development team to understand:
 
@@ -38,8 +44,7 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
 <CheckListItem itemLabel="What happens if the customer provides incorrect info?" />
 <CheckListItem itemLabel="What happens if the system is down and the VA can't complete the task?" />
 
-
-<Notification headerText="Example: Requirements" textColor="#00001e" borderColor="#999" icon="example" backgroundColor="#f0f0f0">
+<Notification headerText="Example: Requirements" textColor="#333399" borderColor="#339" icon="example" backgroundColor="#eeeeff">
 
   For the purposes of this tutorial, we will be looking at a simple skill: asking for the check-in time of a hotel booking.
 
@@ -53,7 +58,7 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
 
 </Notification>
 
-## Tip: write sample dialogs
+## Tip: Write sample dialogs
 
 *(copied from Google Conversational Design guidelines)*
 
@@ -63,7 +68,7 @@ By writing sample dialogs, **you can informally experiment with and evaluate dif
 
 **The easiest way to start writing dialogs is to channel your own expertise as a lifetime communicator.** People can generally tell when something sounds right or wrong, even if they can’t articulate the underlying linguistic principles as to why it sounds that way; because of this, role-playing a dialog is the easiest way to create the initial draft and iterate on successive drafts.
 
-| Heading&nbsp;1  | Heading&nbsp;2                                                                                                                                                                                                                                          |
+|                 | Details                                                                                                                                                                                                                                                 |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Step&nbsp;1** | Focus on one user persona and one key use case.                                                                                                                                                                                                         |
 | **Step&nbsp;2** | Find a partner and role-play the conversation, with one person pretending they’re the user and the other pretending they’re the system persona. Record the conversation. If you don’t have a partner, you’ll have to switch between playing both roles. |
@@ -73,7 +78,7 @@ By writing sample dialogs, **you can informally experiment with and evaluate dif
 
 Here is an example of how our sample skill might be represented as a sample dialog:
 
-<Notification headerText="Example: Sample dialog" textColor="#00001e" borderColor="#999" icon="example" backgroundColor="#f0f0f0">
+<Notification headerText="Example: Sample dialog" textColor="#333399" borderColor="#339" icon="example" backgroundColor="#eeeeff">
 
 | Speaker  | Utterance                                                               |
 | -------- | ----------------------------------------------------------------------- |

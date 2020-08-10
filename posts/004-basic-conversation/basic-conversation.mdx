@@ -12,11 +12,12 @@ slug: basic-conversation
 import Notification from '../../src/components/notification.js'
 import PageFooter from '../../src/components/page-footer.js'
 import CheckListItem from '../../src/components/checklist/checklist-item.js'
+import HR from '../../src/components/horizontal-rule.js'
 
 Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
 (copied from Google Conversational Design guidelines)
 
-<Notification headerText="What your will learn in this section" textColor="#333366" icon="learn" backgroundColor="#eeeeff">
+<Notification headerText="What your will learn in this section" textColor="#00001e" borderColor="#999" icon="learn" backgroundColor="#f0f0f0">
 
 - Checklists to see if conversation design is the right fit
 - Common pitfalls to avoid in conversation design
@@ -27,12 +28,46 @@ Conversation design is a powerful approach, but it's not right for every Action.
 
 Check off as many of the statements on the left as you can to determine how good a fit your task is for conversation design.
 
-| Questions about your project | Conversation design principle |
-| --- | --- |
-| <CheckListItem itemLabel="Users already have human-to-human conversations about this task or topic" /><CheckListItem itemLabel="The interaction is brief with minimal back and forth dialog" /> | **Conversation is intuitive.** It lets users say what they want to get what they want. |
-|<CheckListItem itemLabel="Users would have to tap multiple times to complete the task with a screen" /><CheckListItem itemLabel="Users have to navigate multiple apps or widgets to complete the task with a screen" /><CheckListItem itemLabel="The feature would be difficult or cumbersome to find with a screen." /> | **Conversation saves the user more time and effort than a screen-based UI** Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want. |
-| <CheckListItem itemLabel="Users can do this task while multi-tasking." /><CheckListItem itemLabel="Users can do this task while their hands or eyes are busy." /> | **Conversation lets users multi-task.** It helps them when they are busy, especially in situations where their hands or eyes are occupied, or when they're on the move. |
-| <CheckListItem itemLabel="Users feel comfortable talking or typing about this subject." /> | **Conversations let users speak feely** Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices. |
+| Questions about your project                                                                                                                                                                                                                                                                                             | Conversation design principle                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <CheckListItem itemLabel="Users already have human-to-human conversations about this task or topic" /><CheckListItem itemLabel="The interaction is brief with minimal back and forth dialog" />                                                                                                                          | **Conversation is intuitive.** It lets users say what they want to get what they want.                                                                                                 |
+| <CheckListItem itemLabel="Users would have to tap multiple times to complete the task with a screen" /><CheckListItem itemLabel="Users have to navigate multiple apps or widgets to complete the task with a screen" /><CheckListItem itemLabel="The feature would be difficult or cumbersome to find with a screen." /> | **Conversation saves the user more time and effort than a screen-based UI** Conversation can be the ultimate shortcut. It reduces friction by quickly getting the user what they want. |
+| <CheckListItem itemLabel="Users can do this task while multi-tasking." /><CheckListItem itemLabel="Users can do this task while their hands or eyes are busy." />                                                                                                                                                        | **Conversation lets users multi-task.** It helps them when they are busy, especially in situations where their hands or eyes are occupied, or when they're on the move.                |
+| <CheckListItem itemLabel="Users feel comfortable talking or typing about this subject." />                                                                                                                                                                                                                               | **Conversations let users speak feely** Spoken conversations are best in private spaces or familiar shared spaces. Written conversations are best for personal devices.                |
+
+<Notification headerText="Example: Is our project a fit for conversation design?" textColor="#333399"  icon="example" backgroundColor="#eeeeff">
+
+  <CheckListItem itemLabel="Users already have human-to-human conversations about this task or topic" isChecked="true" />
+  <CheckListItem itemLabel="Users have to navigate multiple apps or widgets to complete the task with a screen" isChecked="true" />
+
+  > *Both of these checks are true - our project asks a simple question for which there is typically a simple answer.*
+
+  <HR color="#ccf" />
+
+  <CheckListItem itemLabel="Users would have to tap multiple times to complete the task with a screen" isChecked="true"/>
+  <CheckListItem itemLabel="Users have to navigate multiple apps or widgets to complete the task with a screen" />
+  <CheckListItem itemLabel="The feature would be difficult or cumbersome to find with a screen." isChecked="true"/>
+
+  > *While our project might not require navigating multiple apps or widgets, it would certainly require the customer to find their booking and search its details for the check-in time. Our project could simplify that process considerably.*
+
+  <HR color="#ccf" />
+
+  <CheckListItem itemLabel="Users can do this task while multi-tasking." isChecked="true" />
+  <CheckListItem itemLabel="Users can do this task while their hands or eyes are busy." isChecked="true" />  
+
+  > *Both of these checks are true. Check-in time is typically a single value that can be communicated conversationally. It isn't neccessary to view a screen in order to understand the answer.*
+
+  <HR color="#ccf" />
+
+  <CheckListItem itemLabel="Users feel comfortable talking or typing about this subject." isChecked="true"/>
+
+  > *There are no privacy concerns about communicating the hotel policy.*
+
+  <HR color="#ccf" />
+
+  **On the whole, our project seems like a good fit for conversation design.**
+
+</Notification>
 
 ### Avoiding conversation design pitfalls
 
