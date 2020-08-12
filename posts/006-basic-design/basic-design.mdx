@@ -12,6 +12,7 @@ slug: basic-design
 import Notification from '../../src/components/notification.js'
 import ExternalLink from '../../src/components/external-link.js'
 import PageFooter from '../../src/components/page-footer.js'
+import MoveFlag from '../../src/components/move-flag.js'
 
 While the flow diagram can demonstrate the logic of your solution, its important to see how the conversation will appear to the customer.
 
@@ -28,18 +29,34 @@ While the flow diagram can demonstrate the logic of your solution, its important
 
 </Notification>
 
+## Getting started
+
 - Refer to (and even use!) the <ExternalLink linkName="CDS Starter Figma file" linkURL="/" needed="true" />
-- Add <ExternalLink linkName="VAC Components" linkURL="https://www.figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=463%3A8833" /> as an Asset to your existing Figma file.
-- **Review Best practice for building out a skill**:
-  - It is most efficient to create a **transcript** of the scenario that you want to illustrate. 
-  - Create a **vertical auto-layout frame** for each scenario that will be documented
-    - Add in every message bubble, card and quick reply that would play a part in your conversation.
-  - Place each transcript inside of a frame (with ‘Clip Content' checked) that is sized to the conversation area of the VAC window. 
-  - The transcript component can slide up to progressively reveal more and more of the conversation. 
-  - **Note: you can have ephemeral elements like cards and quick replies in the transcript and hide them once they've played their part in the conversation - with auto-layout, the parts of the conversation below will slide up as if the hidden elements were not there.**
-  - For a basic conversation, you will need:
+- Add <ExternalLink linkName="VAC Components" linkURL="https://www.figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=463%3A8833" /> as a Library Asset to your Figma file.
+
+![VAC library](./images/add-library.png)
+
+## Best practices for building out a skill
+
+  - Review the <ExternalLink linkName="best practices" linkURL="" /> for designing interactions with the VA.
+    - On the page linked above we list best practices for interactions between the VA and a customer or agent. 
+  - Create a <ExternalLink linkName="transcript component" linkURL="https://www.figma.com/file/bXYsRa3eAw4TMWb56yPJXs/How-to%3A-build-a-transcript?node-id=0%3A1" /> for each of your project's scenarios.
+    - On the page linked above we describe an efficient method of laying out a conversation in Figma so that you can easily show each stage of the conversation for your comps or prototype.
+  - For a basic conversation, that transcript might only consist of:
+    - A simple skill, such as the one we're building in this tutorial, can consist entirely of text messages between the VA and customer or agent as well as Quick Reply buttons to help direct the conversation:
     - <ExternalLink linkName="Message bubbles" linkURL="http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=5826:0" /> for incoming and outgoing messages
-    - <ExternalLink linkName="Quick reply buttons" linkURL="http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=6184:90738" /> 
+
+    - <ExternalLink linkName="Quick reply buttons" linkURL="http://figma.com/file/vjBUZSellUT1M5eZnfp087/VAC-Components?node-id=6184:90738" /> to suggest options to the customer or agent.
+
+<Notification headerText="Transcript of our basic conversation" textColor="#333399" icon="example" backgroundColor="#eeeeff">
+
+<ExternalLink linkName="Conversation design" linkURL="/basic-requirements" /> that we created back on the Requirements page.
+
+
+<MoveFlag message="Need Figma transcript of basic conversation here" />
+
+</Notification>
+
   - In the advanced conversation tutorial, we will discuss:
     - <ExternalLink linkName="WebViews" linkURL="/" needed="true" />
     - <ExternalLink linkName="Declarative cards" linkURL="/" needed="true" />
@@ -50,6 +67,7 @@ While the flow diagram can demonstrate the logic of your solution, its important
 
 <Notification headerText="Review your designs" textColor="#663333" icon="review" backgroundColor="#ffeeee">
 
+- Consider adding a <ExternalLink linkName="Silent Crit" linkURL="https://www.figma.com/file/S1KDX9Zy7e3c3UfZYM9NB9/%F0%9F%95%B9Silent-Crit-%3A-Feedback-Kit?node-id=28%3A2335" /> component to your file and posting your design to Slack for feedback from your team.
 - Review your designs with the stakeholders identified in the <ExternalLink linkName="Virtual Agent Platform Innersource Model" linkURL="https://confluence.expedia.biz/display/VAP/Virtual+Agent+Platform+Innersource+Model" /> page. 
 
 - The links on the left side, to the individual Innersource projects will lead to project pages that identify the stakeholders and representatives of different disciplines.
