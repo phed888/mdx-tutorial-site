@@ -77,6 +77,7 @@ const GlobalStyles = createGlobalStyle`
     }
     li {
       margin: 0;
+      
     }
   }
   .gatsby-resp-image-wrapper {
@@ -84,6 +85,9 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.25);
     margin: 3rem 0;
   }
+  li > p {
+        margin: 0 .02rem;
+      }
 `
 
 export default GlobalStyles
