@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import ExternalLink from "./external-link"
 
 const SecNavContainer = styled.section`
   padding: 2rem;
@@ -79,6 +80,11 @@ const SectionNav = () => {
           </Link>
         </li>
       </ul>
+      <h3>Back to documentation</h3>
+      <ExternalLink
+        linkName="Common tasks"
+        linkURL="https://confluence.expedia.biz/display/GCOUX/Common+tasks"
+      />
     </SecNavContainer>
   )
 }

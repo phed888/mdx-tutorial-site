@@ -27,23 +27,26 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
 
 #### Work with your Content Strategist 
 
-<MoveFlag message="Move this section to site?" />
+<!-- <MoveFlag message="Move this section to site?" /> -->
 
 <CheckListItem itemLabel="Review Content Strategy Documentation and meet with your content strategist" />
 <ExternalLink linkName="Content Strategy Documentation" linkURL="https://confluence.expedia.biz/display/GCOUX/Content+Strategy" />
 
 #### Work with the product manager to understand:
 
-<MoveFlag message="Move this section to site?" />
+<!-- <MoveFlag message="Move this section to site?" /> -->
 
 <CheckListItem itemLabel="Project requirements" />
+<CheckListItem itemLabel="Determine the success metrics - what are you attempting to achieve?" />
 <CheckListItem itemLabel="The business rules that guide the interaction" />
 <CheckListItem itemLabel="Conduct competitive analysis" />
 
 #### Work with the development team to understand:
 
-<MoveFlag message="Move this section to site?" />
+<!-- <MoveFlag message="Move this section to site?" /> -->
 
+<CheckListItem itemLabel="What do we know about the user?" />
+<CheckListItem itemLabel="Understand any current limitations to the design because of tech, and how to document them for a backlog" />
 <CheckListItem itemLabel="What information is available and what will be needed for success" />
 <CheckListItem itemLabel="What information the customer will need to provide" />
 <CheckListItem itemLabel="What happens if the customer isn't able to supply the needed info?" />
@@ -67,7 +70,7 @@ Conversations with the Virtual Assistant (VA) differ from human-to-human convers
 
 ## Tip: Write sample dialogs
 
-<MoveFlag message="Section should be rewritten by our Content strategists?" />
+<!-- <MoveFlag message="Section should be rewritten by our Content strategists?" /> -->
 
 *(copied from Google Conversational Design guidelines)*
 
@@ -89,7 +92,7 @@ Here is an example of how our sample skill might be represented as a sample dial
 
 <Notification headerText="Example: Sample dialog" textColor="#333399" borderColor="#339" icon="example" backgroundColor="#eeeeff">
 
-| Speaker  | Utterance                                                               |
+| Speaker  | Customer Utterance or VA Response                                       |
 | -------- | ----------------------------------------------------------------------- |
 | Customer | "How early can I check into my hotel?"                                  |
 | VA       | "I see you have these bookings. Which one can I help you with?"         |
@@ -98,5 +101,17 @@ Here is an example of how our sample skill might be represented as a sample dial
 | VA       | "Is there anything else I can help you with?"                           |
 
 </Notification>
+
+Here's a list of "Dos" to keep in mind when writing sample dialogs: from <ExternalLink linkName="Sample Dialogs: The Key to Creating Great Actions on Google" linkURL="https://developers.googleblog.com/2018/09/sample-dialogs-key-to-creating-great.html" />
+
+- Start your design by using written/spoken sample dialogs; diagrams of the detailed flow can come later
+- Read your sample dialogs out loud!
+- Make each sample dialog one path; they should not include branching
+- Write several "happy path" sample dialogs
+- Write several "error path" sample dialogs
+- Do a "table read" and have people unfamiliar with your sample dialog play the part of the user
+- Share your sample dialogs with everyone involved in building the Action, so everyone's on the same page
+- When testing, compare the actual working Action with the sample dialogs, to ensure it was implemented - correctly
+- Iterate, iterate, iterate!
 
 <PageFooter prevSlug="/basic-introduction" prevPage="Introduction" nextSlug="/basic-conversation" nextPage="Conversational fit?" />

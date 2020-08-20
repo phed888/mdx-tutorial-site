@@ -1,5 +1,6 @@
 import React from "react"
 import DefaultLayout from "../layouts/defaultLayout"
+import PageFooter from "../components/page-footer"
 
 export default () => {
   return (
@@ -19,6 +20,7 @@ export default () => {
       <p>
         Use the navigation on the left to explore the parts of the tutorial.
       </p>
+      <PageFooter nextPage="00 - Introduction" nextSlug="basic-introduction" />
     </DefaultLayout>
   )
 }
