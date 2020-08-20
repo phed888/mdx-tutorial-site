@@ -15,7 +15,7 @@ import CheckListItem from '../../src/components/checklist/checklist-item.js'
 import HR from '../../src/components/horizontal-rule.js'
 import MoveFlag from '../../src/components/move-flag.js'
 
-<MoveFlag message="Move entire page to site?" />
+<!-- <MoveFlag message="Move entire page to site?" /> -->
 
 Conversation design is a powerful approach, but it's not right for every Action. For example, dialog works well for the task of finding a restaurant's business hours, but it feels clunky for browsing a dinner menu. Before you decide to use conversation design, evaluate whether it will supercharge your Action, making it more intuitive and efficient for users.
 (copied from Google Conversational Design guidelines)
@@ -74,13 +74,16 @@ Check off as many of the statements on the left as you can to determine how good
 
 ### Avoiding conversation design pitfalls
 
-<MoveFlag message="Should be rewritten for the VA" />
+<!-- <MoveFlag message="Should be rewritten for the VA" /> -->
 
 (copied from Google Conversational Design guidelines)
 
 - Because users are cooperative, **they often offer more information than is literally required of them.** 
+  - For instance: a customer might try to speed up the process of finding their itinerary by providing multiple pieces of information. 
 - Your persona won’t always be able to handle cooperative responses. In these cases, **rely on lightweight and conversational error handling to get the dialog back on track** in a way that doesn’t draw attention to the error.
+  - In the example above: The VA should be able to identify the information it needs and disregard the rest.
 - Like your users, your persona should also be cooperative and informative, **offering as much information as is necessary to advance the conversation.**
+  - If the VA can't meet the customer's immediate request, it should offer options that are options that are contextually useful.
 - In conversation, **saying too much is as uncooperative as saying too little.** Facilitate comprehension by keeping turns brief and optimally relevant from the user’s point of view.
 
 <PageFooter prevSlug="/basic-requirements" prevPage="Requirements" nextSlug="/basic-flow" nextPage="Flow design" />

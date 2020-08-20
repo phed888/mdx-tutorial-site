@@ -15,6 +15,7 @@ const SiteWrapper = styled.div`
 const MainContainer = styled.main`
   display: flex;
   flex: 1;
+  padding: 0 2rem;
   section {
     width: 25rem;
   }
