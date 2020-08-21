@@ -45,42 +45,73 @@ const SectionNav = () => {
       <h3>Basic tutorial</h3>
       <ul>
         <li>
-          <Link to="/basic-introduction" activeClassName="active">
+          <Link
+            to="/basic-introduction"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             00 - Introduction
           </Link>
         </li>
         <li>
-          <Link to="/basic-requirements" activeClassName="active">
+          <Link
+            to="/basic-requirements"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             01 - Requirements
           </Link>
         </li>
         <li>
-          <Link to="/basic-conversation" activeClassName="active">
+          <Link
+            to="/basic-conversation"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             02 - Conversational fit?
           </Link>
         </li>
         <li>
-          <Link to="/basic-flow" activeClassName="active">
+          <Link
+            to="/basic-flow"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             03 - Flow design
           </Link>
         </li>
         <li>
-          <Link to="/basic-design" activeClassName="active">
+          <Link
+            to="/basic-design"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             04 - Visual design
           </Link>
         </li>
         <li>
-          <Link to="/basic-test" activeClassName="active">
+          <Link
+            to="/basic-test"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             05 - Testing
           </Link>
         </li>
         <li>
-          <Link to="/basic-handoff" activeClassName="active">
+          <Link
+            to="/basic-handoff"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             06 - Handoff
           </Link>
         </li>
       </ul>
-      <h3>Back to documentation</h3>
+      <h3>
+        <br />
+        Documentation
+      </h3>
       <ExternalLink
         linkName="Common tasks"
         linkURL="https://confluence.expedia.biz/display/GCOUX/Common+tasks"

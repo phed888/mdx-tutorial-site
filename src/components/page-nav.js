@@ -18,11 +18,9 @@ const PgNavContainer = styled.section`
   }
 `
 
-const PageNav = () => {
+const PageNav = ({ noHeader }) => {
   return (
-    <PgNavContainer>
-      <h3>On this page</h3>
-    </PgNavContainer>
+    <PgNavContainer>{noHeader ? "" : <h3>On this page</h3>}</PgNavContainer>
   )
 }
 
