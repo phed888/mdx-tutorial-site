@@ -113,8 +113,8 @@ const SectionNav = () => {
         Documentation
       </h3>
       <ExternalLink
-        linkName="Common tasks"
-        linkURL="https://confluence.expedia.biz/display/GCOUX/Common+tasks"
+        linkName="Building blocks"
+        linkURL="https://confluence.expedia.biz/display/GCOUX/Building+blocks"
       />
     </SecNavContainer>
   )
