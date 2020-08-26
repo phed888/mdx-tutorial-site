@@ -77,7 +77,15 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/layouts/defaultLayout.js"),
         },
-        gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+            },
+          },
+          `gatsby-remark-images`,
+        ],
       },
     },
     "gatsby-plugin-sharp",
