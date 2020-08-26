@@ -7,6 +7,7 @@ import PageNav from "../components/page-nav"
 
 const PageBodyContainer = styled.div`
   display: flex;
+  position: relative;
   .pageContent {
     width: 90rem;
   }
@@ -19,6 +20,10 @@ export const query = graphql`
         title
       }
       body
+      headings {
+        depth
+        value
+      }
     }
   }
 `
@@ -30,9 +35,27 @@ const TutorialTemplate = ({ data: { mdx: post } }) => (
       <div class="pageContent">
         <MDXRenderer>{post.body}</MDXRenderer>
       </div>
-      <PageNav />
+      <PageNav pageHeaders={post.headings} />
     </PageBodyContainer>
   </DefaultLayout>
 )
 
 export default TutorialTemplate
+
+// allMdx {
+//   nodes {
+//     headings {
+//       value
+//       depth
+//     }
+//   }
+// }
+
+// query($slug: String!) {
+//   mdx(frontmatter: { slug: { eq: $slug } }) {
+//     frontmatter {
+//       title
+//     }
+//     body
+//   }
+// }
