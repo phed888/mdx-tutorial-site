@@ -9,7 +9,6 @@ const PgNavContainer = styled.section`
   margin: -1.5rem 0 0 2rem;
   width: 25rem;
   flex-shrink: 0;
-  position: sticky;
   h3 {
     text-transform: uppercase;
   }
