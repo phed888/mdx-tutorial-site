@@ -41,21 +41,3 @@ const TutorialTemplate = ({ data: { mdx: post } }) => (
 )
 
 export default TutorialTemplate
-
-// allMdx {
-//   nodes {
-//     headings {
-//       value
-//       depth
-//     }
-//   }
-// }
-
-// query($slug: String!) {
-//   mdx(frontmatter: { slug: { eq: $slug } }) {
-//     frontmatter {
-//       title
-//     }
-//     body
-//   }
-// }

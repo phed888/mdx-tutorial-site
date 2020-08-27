@@ -2,7 +2,6 @@ import React from "react"
 import DefaultLayout from "../layouts/defaultLayout"
 import PageFooter from "../components/page-footer"
 import styled from "styled-components"
-import PageNav from "../components/page-nav"
 
 const PageBodyContainer = styled.div`
   display: flex;
@@ -35,7 +34,6 @@ export default () => {
             </p>
           </div>
         </div>
-        <PageNav noHeader />
       </PageBodyContainer>
       <PageFooter nextPage="00 - Introduction" nextSlug="basic-introduction" />
     </DefaultLayout>
