@@ -1,0 +1,113 @@
+---
+
+title: Requirements
+description: What you need to get started building a basic skill
+type: documentation
+page_order: 61
+show_in_navbar: false
+slug: requirements
+
+---
+
+import ExternalLink from "../../src/components/external-link.js"
+import HRule from "../../src/components/horizontal-rule.js"
+import PageFooter from "../../src/components/page-footer.js"
+
+
+Conversations with the Virtual Assistant (VA) differ from human-to-human conversations in that the VA can only respond in predetermined ways. Its important to understand what the VA will need to complete the skill and to ensure that it can respond effectively to unexpected responses and either continue to move forward or to transfer the customer to an agent.
+
+## 1. Gathering requirements
+
+![Gathering requirements](./images/gathering-david-clode.png)
+<figcaption>Photo by David Clode on Unsplash</figcaption>
+
+Work with your content strategist, your Project manager and your development team to put together a complete picture of your project.
+
+### Is your project a good fit for conversation design?
+
+- If you are new to conversational design, check to see if your project is a good fit for the virtual agent. 
+<ExternalLink linkName="Meet the Virtual Agent" linkURL="https://confluence.expedia.biz/display/GCOUX/Introduction" /> 
+
+### Content strategy
+
+- Review <ExternalLink linkName="Content Strategy Documentation" linkURL="https://confluence.expedia.biz/display/GCOUX/Content+Strategy" />
+- Meet with your content strategist to review the project
+
+### Business requirements
+
+- Work with PM and stakeholders to determine all project requirements
+- Determine the success metrics for the project - how will you know if you've succeeded?
+- Understand the business rules that guide the interaction
+- Conduct competitive analysis
+
+### Development constraints
+
+- Understand any current limitations to the design because of tech and how to document them for the backlog
+- What information is available and what will be required for success
+- What information the customer will need to provide
+- What happens if the customer isn't able to supply the needed info?
+- What happens if the customer provides too much or too little info?
+- What happens if the customer provides incorrect info?
+- What happens if the system is down and the VA can't complete the task?
+
+<HRule color="#e0e0e0" />
+
+## 2. Tutorial requirements
+
+![Check in](./images/reception-tim-photoguy.png)
+<figcaption>A skill to find a hotel's check-in time.</figcaption>
+
+For the purposes of this tutorial, we will be looking at a simple skill: asking for the check-in time of a hotel booking.
+After going through the checklists above, we've assembled the following requirements for our simple skill:
+
+- there is an existing skill to verify a customer so our customer will be verified
+
+- we will know from the intent that the question is about a hotel booking
+
+- we might need to ask which hotel booking the customer means
+
+- we will know whether or not it is a multi-room booking
+
+- we will know whether or not the hotel has provided us with check-in times
+
+- we will know whether there is an appropriate photo to illustrate check-in
+
+- maybe the front desk?
+
+<HRule color="#e0e0e0" />
+
+## 3. Sample dialog
+
+![Dialog is the basis of conversation design](./images/dialog-dima-pechurin.png)
+<figcaption>Dialog is the basis of conversation design. Photo by Dima Pechurin on Unsplash</figcaption>
+
+Since our interaction will be a chat conversation, we can approximate the interaction by writing a dialog between a customer and our Virtual Assistant. The idea would be to delineate the flow of the interaction without worrying about the technical details of how to accomplish it. This technique would allow you to quickly explore the various edge and error cases you identified in the previous section as well as to rapidly iterate on your primary interaction.
+
+### How to write a sample dialog
+
+1. Work with a partner to act out the happy path scenario for your interaction.
+   1. Read the dialog out loud.
+   2. Create a dialog for each use case - don't include branching!
+   3. Write several happy path and several error path dialogs.
+2. Have people unfamiliar with your project read your dialog
+   1. Share your dialogs with the whole team so that everyone is on the same page.
+3. Diagram the flow of your dialog using Gliffy or some other diagramming tool.
+4. Play the interaction back in the form or a chat
+5. Consolidate feedback and iterate!
+
+### Tutorial: dialog to determine check-in time
+
+Our customer has had a change in their travel plans and will be arriving at their hotel earlier than expected. They need to find out what time the hotel will allow them to check in.
+
+|  Speaker | Customer utterance or VA response                                                   |
+| -------: | ----------------------------------------------------------------------------------- |
+| Customer | How early can I check into my hotel?                                                |
+|       VA | I see you have a few bookings. Which one can I help you with?                       |
+| Customer | The hotel in Seattle                                                                |
+|       VA | Here's what the Four Seasons Seattle says about check in: Check in time is 4:00 pm. |
+|       VA | Is there anything else I can help you with?                                         |
+| Customer | No, that's it - thanks!                                                             |
+
+## 4. Next steps
+
+<PageFooter nextSlug="flow" nextPage="Flow design" />
