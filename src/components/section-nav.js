@@ -6,10 +6,6 @@ import ExternalLink from "./external-link"
 const SecNavContainer = styled.section`
   padding: 2rem;
   font-size: 1.4rem;
-  margin-top: 9rem;
-  h3 {
-    text-transform: uppercase;
-  }
   ul {
     padding: 0;
     li {
@@ -46,16 +42,7 @@ const SectionNav = () => {
       <ul>
         <li>
           <Link
-            to="/basic-introduction"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            00 - Introduction
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/basic-requirements"
+            to="/requirements"
             activeClassName="active"
             partiallyActive={true}
           >
@@ -63,59 +50,26 @@ const SectionNav = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/basic-conversation"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            02 - Conversational fit?
+          <Link to="/flows" activeClassName="active" partiallyActive={true}>
+            02 - Flows
           </Link>
         </li>
         <li>
-          <Link
-            to="/basic-flow"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            03 - Flow design
+          <Link to="/visual-design" activeClassName="active" partiallyActive={true}>
+            03 - Visual design
           </Link>
         </li>
         <li>
-          <Link
-            to="/basic-design"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            04 - Visual design
+          <Link to="/testing" activeClassName="active" partiallyActive={true}>
+            04 - Testing
           </Link>
         </li>
         <li>
-          <Link
-            to="/basic-test"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            05 - Testing
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/basic-handoff"
-            activeClassName="active"
-            partiallyActive={true}
-          >
-            06 - Handoff
+          <Link to="/handoff" activeClassName="active" partiallyActive={true}>
+            05 - Handoff
           </Link>
         </li>
       </ul>
-      <h3>
-        <br />
-        Documentation
-      </h3>
-      <ExternalLink
-        linkName="Building blocks"
-        linkURL="https://confluence.expedia.biz/display/GCOUX/Building+blocks"
-      />
     </SecNavContainer>
   )
 }

@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 const CaptionedImageContainer = styled.div`
   display: flex;
+  padding: 2.4rem;
+  box-shadow: 0 0 1rem 0.5rem rgba(0 0 0 .2);
   caption {
     margin-right: 2rem;
     width: 20rem;
@@ -10,15 +12,13 @@ const CaptionedImageContainer = styled.div`
     text-align: left;
     font-style: italic;
   }
-  .capImage {
-  }
 `
 
-const CaptionedImage = ({ caption, imgPath, alt }) => {
+const CaptionedImage = ({ caption, children }) => {
   return (
     <CaptionedImageContainer>
+      { children }
       <caption>{caption}</caption>
-      <img src="./images/contribute-flow-02.png" alt="Howdy" />
     </CaptionedImageContainer>
   )
 }
