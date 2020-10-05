@@ -2,14 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import DefaultLayout from "../layouts/defaultLayout"
+import DefaultLayout from "../layouts/default-layout"
 import PageNav from "../components/page-nav"
 
 const PageBodyContainer = styled.div`
-  display: flex;
   position: relative;
   .pageContent {
-    width: 90rem;
+    display: inline-block;
+    width: 65%;
+  }
+  section {
+    display: inline-block;
+    position: fixed;
+    padding: 2rem 0 2rem 2rem;
+    margin-top: -10rem;
   }
 `
 
