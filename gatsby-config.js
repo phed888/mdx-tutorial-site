@@ -48,6 +48,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
+              wrapperStyle: "margin-left: 0 !important;"
             },
           },
           {
@@ -75,7 +76,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          default: require.resolve("./src/layouts/defaultLayout.js"),
+          default: require.resolve("./src/layouts/default-layout.js"),
         },
         gatsbyRemarkPlugins: [
           {

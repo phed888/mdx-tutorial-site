@@ -1,5 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const blogPostTemplate = require.resolve(`./src/templates/tutorial`)
+  const blogPostTemplate = require.resolve(
+    `./src/templates/tutorial-template.js`
+  )
   const result = await graphql(`
     query {
       allMdx {

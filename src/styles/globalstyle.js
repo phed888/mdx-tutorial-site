@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
+  :root {
+    --page-width: 120rem;
+  }
+
   html,
   body {
     padding: 0;
@@ -25,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     color: #555;
     font-size: 1.6rem;
     line-height: 1.75;
-    width: 120rem;
+    width: var(--page-width);
     margin: 0 auto;
     /* remove margin-top from __gatsby div */
     > div {
@@ -80,10 +84,21 @@ const GlobalStyles = createGlobalStyle`
       
     }
   }
-  .gatsby-resp-image-wrapper {
+  p > .gatsby-resp-image-wrapper {
     border-radius: .8rem;
-    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.25);
-    margin: 3rem 0;
+    border: 1.6rem solid #fff;
+    box-shadow: 0px 0px 2px 2px #f4f4f4;
+    margin: 2.4rem 0 0;
+    width: 100%;
+  }
+  
+  p + figcaption {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: -1.6rem;
+    padding: 0.4rem 0;
+    color: #666;
   }
   li > p {
         margin: 0 .02rem;

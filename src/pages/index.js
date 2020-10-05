@@ -1,5 +1,5 @@
 import React from "react"
-import DefaultLayout from "../layouts/defaultLayout"
+import DefaultLayout from "../layouts/default-layout"
 import PageFooter from "../components/page-footer"
 import styled from "styled-components"
 

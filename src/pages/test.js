@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import DefaultLayout from '../layouts/defaultLayout'
+import React from "react"
+import { Link } from "gatsby"
+import DefaultLayout from "../layouts/default-layout"
 
 export default () => (
   <DefaultLayout>
