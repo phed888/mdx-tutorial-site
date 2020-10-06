@@ -12,10 +12,25 @@ The flow diagram is a **step-by-step visualization of how to fulfill the project
 
 ## 1. Flow diagram best practices
 
-### Find the fundamental building blocks
+### Identify your building blocks
 
 - For background, have a look at <ExternalLink linkName="Atomic Design" linkURL="https://bradfrost.com/blog/post/atomic-web-design/" /> by Brad Frost. 
 - Attempt to identify the fundamental interactions that make up your skill.
+
+### Quick replies vs NLP*
+
+*Natural Language Processing
+
+Often, you will know the skills that are most commonly used by customers and can save them time and cognitive load by presenting them with those options. At the same time, you don't want to overwhelm the customer with choices so there may be leading questions that will help you present a tailored set of options.  
+
+- Can each customer interaction be reduced to choosing from **6 or fewer** options?
+- If **yes**, requesting customer feedback via Quick Replies could be a good option.
+  - The Quick Replies could help customers to communicate their intent.
+  - If the options available don't meet the customer needs, your skill should provide a fall-back. 
+- If **no**, you will need to ask the customer to type in a response.
+  - Best for well defined information such as itinerary numbers, email addresses and phone numbers.
+  - A potential drawback would be the customer entering additional or extraneous information. Your NLP flow should provide graceful fallbacks in this event.
+- A hybrid approach would use both as appropriate.
 
 ### Build on the work of other teams
 - Review the library of existing <ExternalLink linkName="Flow maps" linkURL="https://confluence.expedia.biz/display/GCOUX/Flows" /> to see if any of the modules that make up your interaction already exist.
@@ -44,7 +59,9 @@ The flow diagram is a **step-by-step visualization of how to fulfill the project
   - Insure that the voice and tone of the VA is correct.
 - Work with development to make sure that all edge and error cases are documented.
 
-## 2. Tutorial: Basic skill flow
+## 2. Tutorial
+
+### Basic flow
 
 We can lay out the basic flow that a customer might follow in asking for lodging amenities information. Initially we work with the primary decision points and 
 
@@ -67,6 +84,13 @@ We can lay out the basic flow that a customer might follow in asking for lodging
 
 </TutorialStep>
 
+### Build flows for alternate and error paths 
+
+- With your basic flow as a backbone:
+- Follow every branch and add the atomic-level skills that you link to.
+- Make sure that you account for customer errors or inability to complete your skill
+- Account for system errors and service outages - how will your skill communicate these problems to the customer?
+
 ## 3. Review your designs
 - Review your designs with the stakeholders identified in the <ExternalLink linkName="Virtual Agent Platform Innersource Model" linkURL="https://confluence.expedia.biz/display/VAP/Virtual+Agent+Platform+Innersource+Model" /> page.
 
@@ -86,8 +110,8 @@ We can lay out the basic flow that a customer might follow in asking for lodging
 ## 4. Next steps
 
 <PageFooter
-  prevSlug="/basic-conversation"
-  prevPage="Conversational fit?"
-  nextSlug="/basic-design"
+  prevSlug="/requirements"
+  prevPage="Requirements"
+  nextSlug="/visual-design"
   nextPage="Visual design"
 />
