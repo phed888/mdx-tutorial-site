@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import ExternalLink from "./external-link"
 
 const SecNavContainer = styled.section`
   padding: 2rem;
@@ -55,7 +54,11 @@ const SectionNav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/visual-design" activeClassName="active" partiallyActive={true}>
+          <Link
+            to="/visual-design"
+            activeClassName="active"
+            partiallyActive={true}
+          >
             03 - Visual design
           </Link>
         </li>
